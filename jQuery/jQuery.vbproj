@@ -1,0 +1,166 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50B94F74-1EC8-4EB7-904C-D360AD9E6512}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>jQuery</RootNamespace>
+    <AssemblyName>jQuery</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{D59BE175-2ED0-4C54-BE3D-CDAA9F3214C8};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>14.0</MinimumOfficeToolsVersion>
+    <SandboxedSolution>False</SandboxedSolution>
+    <ActiveDeploymentConfiguration>No Activation</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>jQuery.xml</DocumentationFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>jQuery.xml</DocumentationFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Microsoft.SharePoint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlTemplates\jQuery\1.12.4\jQuery_1_12_4.ascx.designer.vb">
+      <DependentUpon>jQuery_1_12_4.ascx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\jQuery\1.12.4\jQuery_1_12_4.ascx.vb">
+      <DependentUpon>jQuery_1_12_4.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\jQuery\2.2.4\jQuery_2_2_4.ascx.designer.vb">
+      <DependentUpon>jQuery_2_2_4.ascx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\jQuery\2.2.4\jQuery_2_2_4.ascx.vb">
+      <DependentUpon>jQuery_2_2_4.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\jQuery\3.2.1\jQuery_3_2_1.ascx.designer.vb">
+      <DependentUpon>jQuery_3_2_1.ascx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\jQuery\3.2.1\jQuery_3_2_1.ascx.vb">
+      <DependentUpon>jQuery_3_2_1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Controls_1_12_4\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f3a20035-7ea3-4802-b9c5-fc48a42efa43}</SharePointProjectItemId>
+    </None>
+    <None Include="Controls_2_2_4\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2361af1a-71a9-4362-9283-3a0abce03c3a}</SharePointProjectItemId>
+    </None>
+    <None Include="Controls_3_2_1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{becdd4b4-e2db-4955-bb91-3b27031a9487}</SharePointProjectItemId>
+    </None>
+    <None Include="ControlTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{feec51bb-6cac-40c5-a244-eb4acf463b33}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature_1_12_4\Feature_1_12_4.feature">
+      <FeatureId>{8d1abcdf-76e9-4cbf-9a0d-20d3d8e427bb}</FeatureId>
+    </None>
+    <None Include="Features\Feature_2_2_4\Feature_2_2_4.feature">
+      <FeatureId>{82f17b14-3b27-49cf-87d9-fc9f72bfafa2}</FeatureId>
+    </None>
+    <None Include="Features\Feature_3_2_1\Feature_3_2_1.feature">
+      <FeatureId>{2347c07e-2d26-4328-9e4e-8263f239b84e}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\jQuery\1.12.4\jquery-1.12.4.min.map" />
+    <None Include="Layouts\jQuery\2.2.4\jquery-2.2.4.min.map" />
+    <None Include="Layouts\jQuery\3.2.1\jquery-3.2.1.min.map" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1ab17d3b-e8d0-467f-8865-fdbf43dfcfd8}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{b50e5559-c6be-4ef4-991f-16d21ec03daf}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Controls_1_12_4\Elements.xml" />
+    <Content Include="Controls_2_2_4\Elements.xml" />
+    <Content Include="Controls_3_2_1\Elements.xml" />
+    <Content Include="ControlTemplates\jQuery\1.12.4\jQuery_1_12_4.ascx" />
+    <Content Include="ControlTemplates\jQuery\2.2.4\jQuery_2_2_4.ascx" />
+    <Content Include="ControlTemplates\jQuery\3.2.1\jQuery_3_2_1.ascx" />
+    <Content Include="Features\Feature_1_12_4\Feature_1_12_4.Template.xml">
+      <DependentUpon>Feature_1_12_4.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature_2_2_4\Feature_2_2_4.Template.xml">
+      <DependentUpon>Feature_2_2_4.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature_3_2_1\Feature_3_2_1.Template.xml">
+      <DependentUpon>Feature_3_2_1.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\jQuery\1.12.4\jquery-1.12.4.js" />
+    <Content Include="Layouts\jQuery\1.12.4\jquery-1.12.4.min.js" />
+    <Content Include="Layouts\jQuery\2.2.4\jquery-2.2.4.js" />
+    <Content Include="Layouts\jQuery\2.2.4\jquery-2.2.4.min.js" />
+    <Content Include="Layouts\jQuery\3.2.1\jquery-3.2.1.js" />
+    <Content Include="Layouts\jQuery\3.2.1\jquery-3.2.1.min.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
